@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Vibe Snap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vibe Snap es una aplicación web que permite a los usuarios subir y compartir fotos de manera fácil y rápida. Está construida utilizando Vite lo que garantiza un rendimiento óptimo y una experiencia de usuario fluida.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Registro e inicio de sesión**: Los usuarios pueden registrarse e iniciar sesión utilizando su correo electrónico y contraseña o mediante Google.
+- **Carga de fotos**: Los usuarios pueden subir fotos a la galería.
+- **Galería de fotos**: Visualiza todas las fotos subidas en una interfaz atractiva y responsiva.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React]
+- [Firebase]
+- [Chakra UI]
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clona el repositorio:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://github.com/Andrezgrondona/vibesnap.git
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+  - npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  - npm run dev
+
+  ## Login - test
+  User:
+  testvivesnap@gmail.com
+
+  Password:VibeSnap1234
+
+## Deploy - Vercel
+https://vibesnap-six.vercel.app/
+   
